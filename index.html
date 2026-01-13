@@ -378,29 +378,32 @@
         flex-direction: column;
       }
       .right-column {
-        padding: 2rem;
-<<<<<<< HEAD
-=======
-        order: -1;
->>>>>>> c59b2b9de20dd46f07bab22fa26076fa4b05680a
+        display: contents;
       }
       .photo-side {
         max-width: 400px;
         margin: 0 auto;
+        order: 1;
+        padding: 0 2rem;
+      }
+      .content-side {
+        padding: 2rem;
+        order: 2;
       }
       .awards-section {
         margin-top: 1rem;
         max-width: 400px;
         margin-left: auto;
         margin-right: auto;
+        order: 3;
+        padding: 0 2rem;
       }
       .team-image {
         max-width: 400px;
         margin-left: auto;
         margin-right: auto;
-      }
-      .content-side {
-        padding: 2rem;
+        order: 4;
+        padding: 0 2rem;
       }
       .header-container {
         max-width: 100%;
