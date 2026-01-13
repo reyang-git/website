@@ -6,7 +6,7 @@
   <title>Rachel Yang - Impact Investor</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Allura&family=Inter:wght@400;500;600;700&family=Montserrat:wght@600&family=Oswald:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600;700&family=Raleway:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     :root {
       --main-color: #FAF8F5;
@@ -238,6 +238,16 @@
       margin-top: 10px;
       padding: 0;
     }
+    .bottom-banner {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+    .bottom-banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
     .awards-title {
       color: var(--accent);
       font-size: 1.08rem;
@@ -275,18 +285,6 @@
     .awards-list li:last-child {
       margin-bottom: 0;
     }
-    .team-image {
-      width: 100%;
-      margin-top: 2rem;
-      overflow: hidden;
-    }
-    .team-image img {
-      width: 100%;
-      height: auto;
-      display: block;
-      border-radius: 12px;
-      margin-top: -2cm;
-    }
     .header-container {
       background: var(--white);
       border-radius: 0;
@@ -315,7 +313,7 @@
       margin-bottom: var(--spacing);
     }
     .name {
-      font-family: 'Playfair Display', serif;
+      font-family: 'Raleway', sans-serif;
       font-size: 4.5rem;
       font-weight: 400;
       letter-spacing: 0.03em;
@@ -402,14 +400,6 @@
         padding: 0 2rem;
         box-sizing: border-box;
       }
-      .team-image {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        order: 4;
-        padding: 0 2rem;
-        box-sizing: border-box;
-      }
       .header-container {
         max-width: 100%;
       }
@@ -422,8 +412,7 @@
         padding: 1rem;
       }
       .photo-side,
-      .awards-section,
-      .team-image {
+      .awards-section {
         padding: 0 1rem;
       }
       .name {
@@ -519,11 +508,12 @@
           </ul>
         </div>
       </section>
-      <div class="team-image">
-        <img src="Team.jpg" alt="Team">
-      </div>
     </div>
     </div>
+
+  <section class="bottom-banner">
+    <img src="team2.jpg" alt="Team">
+  </section>
 
   <script>
     // Mobile menu toggle
