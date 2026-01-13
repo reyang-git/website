@@ -381,29 +381,34 @@
         display: contents;
       }
       .photo-side {
-        max-width: 400px;
-        margin: 0 auto;
+        width: 100%;
+        margin: 0;
         order: 1;
         padding: 0 2rem;
+        box-sizing: border-box;
       }
       .content-side {
         padding: 2rem;
         order: 2;
+        width: 100%;
+        box-sizing: border-box;
       }
       .awards-section {
         margin-top: 1rem;
-        max-width: 400px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
         order: 3;
         padding: 0 2rem;
+        box-sizing: border-box;
       }
       .team-image {
-        max-width: 400px;
-        margin-left: auto;
-        margin-right: auto;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
         order: 4;
         padding: 0 2rem;
+        box-sizing: border-box;
       }
       .header-container {
         max-width: 100%;
@@ -415,6 +420,11 @@
     @media (max-width: 420px) {
       .content-side {
         padding: 1rem;
+      }
+      .photo-side,
+      .awards-section,
+      .team-image {
+        padding: 0 1rem;
       }
       .name {
         font-size: 2.5rem;
