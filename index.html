@@ -240,12 +240,13 @@
     }
     .bottom-banner {
       width: 100%;
-      margin: 0;
+      margin: calc(1.5cm - 80px) 0 0 0;
       padding: 0 calc(4rem + 1.5rem);
       box-sizing: border-box;
       display: block;
       visibility: visible;
       opacity: 1;
+      overflow: hidden;
     }
     .bottom-banner img {
       width: 100%;
@@ -254,6 +255,51 @@
       max-width: 100%;
       visibility: visible;
       opacity: 1;
+      clip-path: inset(3cm 0 0 0);
+      -webkit-clip-path: inset(3cm 0 0 0);
+      margin-top: -80px;
+    }
+    .bottom-banner-caption {
+      font-family: var(--font-main);
+      font-size: 0.9rem;
+      color: var(--accent);
+      text-align: left;
+      margin-top: 0.75rem;
+      padding: 0;
+    }
+    /* Acknowledgement of Country Footer */
+    .acknowledgement-footer {
+      width: 100%;
+      background: var(--bg);
+      border-top: 1px solid rgba(250, 248, 245, 0.15);
+      padding: 2rem calc(4rem + 1.5rem);
+      box-sizing: border-box;
+      margin-top: 0;
+    }
+    .acknowledgement-container {
+      width: 100%;
+      text-align: left;
+      color: var(--main-color);
+      margin: 0;
+      padding: 0;
+    }
+    .acknowledgement-footer h2 {
+      font-family: var(--font-main);
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--main-color);
+      margin: 0 0 1rem 0;
+    }
+    .acknowledgement-footer p {
+      font-family: var(--font-main);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--main-color);
+      margin: 0;
+      max-width: 800px;
+      text-align: left;
     }
     .awards-title {
       color: var(--accent);
@@ -421,6 +467,15 @@
         width: 100%;
         box-sizing: border-box;
       }
+      .acknowledgement-footer {
+        padding: 2rem calc(2rem + 1.5rem);
+      }
+      .acknowledgement-footer h2 {
+        font-size: 1rem;
+      }
+      .acknowledgement-footer p {
+        font-size: 0.9rem;
+      }
       .bottom-banner img {
         width: 100%;
         height: auto;
@@ -458,6 +513,15 @@
       }
       .name {
         font-size: 2.5rem;
+      }
+      .acknowledgement-footer {
+        padding: 1.5rem calc(1rem + 1.5rem);
+      }
+      .acknowledgement-footer h2 {
+        font-size: 0.95rem;
+      }
+      .acknowledgement-footer p {
+        font-size: 0.85rem;
       }
     }
     @media (max-width: 360px) {
@@ -574,7 +638,15 @@
 
   <section class="bottom-banner">
     <img src="Team2.jpg" alt="Team">
+    <p class="bottom-banner-caption">The Giant Leap Team 2025</p>
   </section>
+
+  <footer class="acknowledgement-footer" role="contentinfo">
+    <div class="acknowledgement-container">
+      <h2>Acknowledgement of Country</h2>
+      <p>I acknowledge the Traditional Custodians of the lands on which I live and work, and pay my respects to Elders past, present and emerging. I recognise that sovereignty was never ceded and acknowledge the ongoing connection to land, waters and community of First Nations peoples.</p>
+    </div>
+  </footer>
 
   <script>
     // Mobile menu toggle
