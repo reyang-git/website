@@ -234,6 +234,8 @@
     .media-content-col {
       flex: 1;
       min-width: 0;
+      width: 100%;
+      box-sizing: border-box;
     }
     .media-page-title {
       font-family: 'Raleway', sans-serif;
@@ -256,6 +258,8 @@
       gap: 1rem;
       margin-bottom: 2rem;
       align-items: center;
+      width: 100%;
+      box-sizing: border-box;
     }
     .search-input {
       flex: 1;
@@ -416,28 +420,51 @@
       .filter-bar {
         flex-direction: column;
         gap: 0.75rem;
+        width: 100%;
+        box-sizing: border-box;
       }
       .search-input {
         width: 100%;
         min-width: 0;
+        max-width: 100%;
         flex: none;
+        box-sizing: border-box;
       }
       .filter-buttons {
         width: 100%;
         flex-wrap: wrap;
+        box-sizing: border-box;
+      }
+      .filter-btn {
+        flex-shrink: 0;
       }
     }
     @media (max-width: 420px) {
       .media-wrapper {
         padding: 1.5rem 1rem;
+        box-sizing: border-box;
+      }
+      .media-content-col {
+        width: 100%;
+        min-width: 0;
+        box-sizing: border-box;
+      }
+      .filter-bar {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
       }
       .search-input {
         padding: 0.65rem 0.85rem;
         font-size: 0.9rem;
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
       }
       .filter-btn {
         font-size: 0.8rem;
         padding: 0.45rem 0.85rem;
+        white-space: nowrap;
       }
     }
   </style>
