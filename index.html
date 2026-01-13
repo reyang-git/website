@@ -235,18 +235,28 @@
     }
     .awards-section {
       width: 100%;
-      margin-top: 10px;
+      margin-top: 20px;
       padding: 0;
+    }
+    .bold-contract-section {
+      margin-bottom: 1rem;
     }
     .bottom-banner {
       width: 100%;
-      margin: calc(1.5cm - 80px) 0 0 0;
+      margin: 0.5cm 0 0 0;
       padding: 0 calc(4rem + 1.5rem);
       box-sizing: border-box;
       display: block;
       visibility: visible;
       opacity: 1;
       overflow: hidden;
+    }
+    .contact-section-below-banner {
+      width: 100%;
+      padding: 0 calc(4rem + 1.5rem);
+      box-sizing: border-box;
+      margin-top: 1.5cm;
+      margin-bottom: 1.5cm;
     }
     .bottom-banner img {
       width: 100%;
@@ -391,7 +401,7 @@
       text-transform: uppercase;
       letter-spacing: 0.10em;
       font-weight: 600;
-      margin-bottom: 0.3rem;
+      margin-bottom: 1.5rem;
       margin-top: 1.2rem;
     }
     .about-text, .work-text {
@@ -399,6 +409,10 @@
       color: var(--main-color);
       margin: 0;
       line-height: 1.6;
+    }
+    .about-text a {
+      font-weight: 400;
+      text-decoration: underline;
     }
     .work-list {
       list-style: none;
@@ -445,13 +459,16 @@
         box-sizing: border-box;
       }
       .awards-section {
-        margin-top: 1rem;
+        margin-top: 2rem;
         width: 100%;
         margin-left: 0;
         margin-right: 0;
         order: 3;
         padding: 0 2rem;
         box-sizing: border-box;
+      }
+      .bold-contract-section {
+        margin-bottom: 1rem;
       }
       .header-container {
         max-width: 100%;
@@ -466,6 +483,11 @@
         opacity: 1;
         width: 100%;
         box-sizing: border-box;
+      }
+      .contact-section-below-banner {
+        padding: 0 calc(2rem + 1.5rem);
+        margin-top: 1.5cm;
+        margin-bottom: 1.5cm;
       }
       .acknowledgement-footer {
         padding: 2rem calc(2rem + 1.5rem);
@@ -495,6 +517,9 @@
       .awards-section {
         padding: 0 1rem;
       }
+      .bold-contract-section {
+        margin-bottom: 1rem;
+      }
       .bottom-banner {
         padding: 0 calc(1rem + 1.5rem);
         display: block;
@@ -504,6 +529,11 @@
         box-sizing: border-box;
         max-width: 100vw;
         overflow: visible;
+      }
+      .contact-section-below-banner {
+        padding: 0 calc(1rem + 1.5rem);
+        margin-top: 1.5cm;
+        margin-bottom: 1.5cm;
       }
       .bottom-banner img {
         width: 100%;
@@ -538,6 +568,11 @@
         box-sizing: border-box;
         max-width: 100vw;
         overflow: visible;
+      }
+      .contact-section-below-banner {
+        padding: 0 1rem;
+        margin-top: 1.5cm;
+        margin-bottom: 1.5cm;
       }
       .bottom-banner img {
         width: 100%;
@@ -607,13 +642,11 @@
             I also co-founded a non-profit organisation focused on raising funds and awareness for Motor Neurone Disease, work that reinforced my commitment to impact-driven initiatives and purpose-led leadership.
           </p>
         </section>
-        <section>
-          <div class="section-title">Contact</div>
-          <div class="contact">
-            <a href="https://www.linkedin.com/in/rachel-yang/" class="contact-detail" target="_blank" rel="noopener">
-              LinkedIn
-            </a>
-          </div>
+        <section class="bold-contract-section">
+          <div class="section-title">The BOLD Contract</div>
+          <p class="about-text">
+            In 2019, I led the design of a pioneering impact-linked debt instrument - the BOLD (Beneficial Outcomes Linked Debt) contract - a novel financing tool that aligns investor returns with measurable positive social and environmental outcomes. Unlike traditional debt, the BOLD contract reduces the borrower's outstanding balance as their impact increases, effectively incentivising mission-driven businesses to achieve greater outcomes while providing impact-aligned investors with a differentiated risk-return profile. The first application of this instrument was a catalytic loan aimed at supporting a startup focused on empowering neurodiverse talent, demonstrating how innovative debt can simultaneously drive impact and commercial growth. Read more <a href="https://www.impact-group.com.au/wp-content/uploads/2019/11/IIG-BOLD-Contract-Explainer.pdf" target="_blank" rel="noopener" class="contact-detail">here</a>.
+          </p>
         </section>
       </div>
     </div>
@@ -645,6 +678,18 @@
   <section class="bottom-banner">
     <img src="Team2.jpg" alt="Team">
     <p class="bottom-banner-caption">The Giant Leap Team 2025</p>
+  </section>
+
+  <section class="contact-section-below-banner">
+    <div class="section-title">Contact</div>
+    <div class="contact">
+      <a href="https://www.linkedin.com/in/rachel-yang/" class="contact-detail" target="_blank" rel="noopener">
+        LinkedIn
+      </a>
+      <a href="https://www.giantleap.com.au/get-in-touch" class="contact-detail" target="_blank" rel="noopener">
+        giantleap.com.au/get-in-touch
+      </a>
+    </div>
   </section>
 
   <footer class="acknowledgement-footer" role="contentinfo">
