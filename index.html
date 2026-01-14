@@ -311,6 +311,46 @@
       max-width: 800px;
       text-align: left;
     }
+    .disclaimer-footer {
+      width: 100%;
+      background: var(--bg);
+      border-top: none;
+      padding: 2rem calc(4rem + 1.5rem);
+      box-sizing: border-box;
+      margin-top: 0;
+    }
+    .disclaimer-container {
+      width: 100%;
+      text-align: left;
+      color: var(--main-color);
+      margin: 0;
+      padding: 0;
+    }
+    .disclaimer-footer h2 {
+      font-family: var(--font-main);
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--main-color);
+      margin: 0 0 1rem 0;
+    }
+    .disclaimer-footer p {
+      font-family: var(--font-main);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--main-color);
+      margin: 0 0 1rem 0;
+      max-width: 800px;
+      text-align: left;
+    }
+    .disclaimer-footer .copyright {
+      font-family: var(--font-main);
+      font-size: 0.95rem;
+      color: var(--main-color);
+      margin: 0;
+      text-align: left;
+    }
     .awards-title {
       color: var(--accent);
       font-size: 1.08rem;
@@ -499,6 +539,18 @@
       .acknowledgement-footer p {
         font-size: 0.9rem;
       }
+      .disclaimer-footer {
+        padding: 2rem calc(2rem + 1.5rem);
+      }
+      .disclaimer-footer h2 {
+        font-size: 1rem;
+      }
+      .disclaimer-footer p {
+        font-size: 0.9rem;
+      }
+      .disclaimer-footer .copyright {
+        font-size: 0.9rem;
+      }
       .bottom-banner img {
         width: 100%;
         height: auto;
@@ -564,6 +616,18 @@
         font-size: 0.95rem;
       }
       .acknowledgement-footer p {
+        font-size: 0.85rem;
+      }
+      .disclaimer-footer {
+        padding: 1.5rem calc(1rem + 1.5rem);
+      }
+      .disclaimer-footer h2 {
+        font-size: 0.95rem;
+      }
+      .disclaimer-footer p {
+        font-size: 0.85rem;
+      }
+      .disclaimer-footer .copyright {
         font-size: 0.85rem;
       }
     }
@@ -709,6 +773,14 @@
     <div class="acknowledgement-container">
       <h2>Acknowledgement of Country</h2>
       <p>I acknowledge the Traditional Custodians of the lands on which I live and work, and pay my respects to Elders past, present and emerging. I recognise that sovereignty was never ceded and acknowledge the ongoing connection to land, waters and community of First Nations peoples.</p>
+    </div>
+  </footer>
+
+  <footer class="disclaimer-footer" role="contentinfo">
+    <div class="disclaimer-container">
+      <h2>Disclaimer</h2>
+      <p>The information on this website is general in nature and reflects my personal views and experience. It does not constitute financial, legal or investment advice.</p>
+      <p class="copyright">© 2026 Rachel Yang</p>
     </div>
   </footer>
 
